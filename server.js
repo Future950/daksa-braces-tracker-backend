@@ -86,3 +86,12 @@ app.post('/patients/:id/payments', (req, res) => {
 app.get('/_health', (req, res) => res.json({ ok: true }));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://Future950.github.io'
+  ],
+  methods: ['GET','POST','PUT','DELETE'],
+  credentials: true
+}));
