@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://YOUR_GITHUB_USERNAME.github.io'
+    'https://Future950.github.io'
   ],
   methods: ['GET','POST','PUT','DELETE'],
   credentials: true
